@@ -1,0 +1,13 @@
+<div class="bg-info bg-gradient">
+    <div class="padding-top text-center">
+        <h1>Bienvenido al pokedex</h1>
+        <p>Se encontraron {{pokedex?.count}} pokemons</p>
+        <!-- <h5>Cuantos pokemons te gustaria ver</h5>  -->
+        <!-- Se queria ver si se podia mandar el limte  de pokemons por parametros -->
+
+        <h3>Mostrando {{pokedex?.results?.length}} pokemons.</h3>
+        <div class="d-flex justify-content-center flex-wrap">
+            <app-pokemon [pokemon]="pokemon" *ngFor="let pokemon of pokedex?.results"></app-pokemon>
+        </div>
+    </div>
+</div>

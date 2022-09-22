@@ -1,0 +1,13 @@
+<div class="p-3 m-5 text-center bg-white rounded shadow">
+    <a href={{pokemon?.url}}>
+    <h4>{{pokemonDetalle?.id}} - {{pokemon?.name}}</h4>    
+    <img src={{pokemonDetalle?.sprites?.front_default}} alt={{pokemonDetalle?.name}}>
+    <img src={{pokemonDetalle?.sprites?.back_default}} alt={{pokemonDetalle?.name}}>
+    <p>Peso: {{pokemonDetalle?.weight}}</p>
+    <p>Altura: {{pokemonDetalle?.height}}</p>
+    <p>Experiencia base: {{pokemonDetalle?.base_experience}}</p>
+    <p>Nombre de especie: {{pokemonDetalle?.species?.name}}</p>
+    <!-- <p>Tipo: {{pokemonDetalle?.types[0].name}}</p> -->
+    <span class="texto-negrita">Da click sobre la tarjeta para más detalles</span>
+    </a>
+</div>
